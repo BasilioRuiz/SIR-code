@@ -1,0 +1,13 @@
+******************************************************************************************************************************************************
+VERSION 2.0                           By Paul Barklem, Paul.Barklem@fysast.uu.se
+ 
+ Input Filename: lines.input                   
+Output Filename: lines2                        
+Time: Fri Feb 24 10:42:28 2017
+ 
+Processed     14 Lines.
+******************************************************************************************************************************************************
+Spec     Wavel      Elow     Elimit       Eupp     Elimit   L      J     N*low N*upp  Sigma    Alpha  Log(FWHM/N)   Log(C6:U) Log(FWHM/N)   Log(C6:U)
+                                                                                                                               ----Unsold values----
+  
+ Fe I photospheric lines                                                                            

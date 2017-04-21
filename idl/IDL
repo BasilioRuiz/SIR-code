@@ -1,0 +1,11 @@
+
+print,'Welcome!'
+
+!path=!path+':~/idlsoft.dir'
+!path=!path+':/scratch/brc/ines/idlpro'
+!path=!path+':/home/mcv/idlpro'
+!path=!path+':'+expand_path("+/Users/orozco/IDL/Synthesis/Milos_idl_beta1.2/")
+
+device,bypass_translation = 0
+device,decomposed=0
+device,retain=2

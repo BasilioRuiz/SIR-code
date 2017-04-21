@@ -1,0 +1,65 @@
+### This is a blank template for widthcomp input files
+### List data below in tabular form
+###
+### 	Wavel		Elower	 	Elimit		Eupper		Elimit         llow  lupp  Jlow Jupp
+###    	(angst)		(cm^-1)		(cm^-1)		(cm^-1)		(cm^-1)
+###
+$$$ Fe I photospheric lines
+Fe 1    5247.049        704.007         63737.704       19757.032      63737.704         0  1  2    3
+Fe 1    5250.2086       978.074         63737.704       20019.635      63737.704         0  1  0    1
+Fe 1    5250.6456       17726.988       63737.704       36766.966      63737.704         0  1  2    3
+Fe 1    6173.3352       17927.382       63737.704       34121.603      63737.704         0  1  1    0
+Fe 1    6301.5008       29469.024       63737.704       45333.875      63737.704         1  0  2    2
+Fe 1    6302.4932       29732.736       63737.704       45595.086      63737.704         1  0  1    0
+Fe 1    8496.9900       37162.746       63737.704       48928.388      63737.704         1  0  3    2
+Fe 1    8538.0147       39625.804       63737.704       51334.911      63737.704         1  2  4    4
+Fe 1    8661.8994       17927.382       63737.704       29469.024      63737.704         0  1  1    2
+$$$ Multiplet 1 of Na & Ni I line
+Na 1    5889.950954     0               41449.451       16973.36619    41449.451         0  1  0.5  1.5
+Ni 1    5892.88         16017.306       61619.77        32982.260      61619.77          0  1  0    1
+Na 1    5895.923        0               41449.451       16956.17025    41449.451         0  1  0.5  0.5
+$$$ Mg I b2
+Mg 1    5172.6843       21870.464       61671.05        41197.403      61671.05          1  0  1    1
+$$$ Si I 10827
+Si 1    10827.091       39955.053       65747.76        49188.617      65747.76          0  1  2    2   
+end
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$ Original atomic parameters from NIST
+$$$
+$$$
+$$$
+$$$
+$$$
+$$$
+
+$$$Extracted from table 1
+26.00   5247.049  2.0  3.0   0.087   2.448    704.007  63700.000  19757.032  63700.000 0 1   206. 0.253 -7.822 0.373
+26.00   5250.208  0.0  1.0   0.121   2.481    978.072  63700.000  20019.635  63700.000 0 1   207. 0.253 -7.820 0.373
+26.00   5250.645  2.0  3.0   2.197   4.556  17726.980  77174.000  36766.961  63700.000 0 1   344. 0.268 -7.603 0.366
+26.00   6173.340  1.0  0.0   2.221   4.228  17927.377  77174.000  34121.578  65572.000 0 1   281. 0.266 -7.690 0.367
+The columns are:
+
+  (1) Species number Z + (ionisation stage-1)/100
+  (2) Wavelength in Angstroms
+  (3) Lower J quantum number
+  (4) Upper J quantum number 
+  (5) Lower energy level in eV
+  (6) Upper energy level in eV
+  (7) Line broadening cross-section in atomic units
+  (8) The velocity parameter alpha
+  (9) Lower level energy in cm^-1
+  (10) Ionisation limit of the lower level in cm^-1
+  (11) Upper level energy in cm^-1
+  (12) Ionisation limit of the upper level in cm^-1
+  (13) Orbital angular momentum quantum number l for the lower state
+  (14) Orbital angular momentum quantum number l for the upper state
+  (15) Log of linewidth per perturber at 10000K (rad/s cm^3)
+
+
+
+
+
+
+
+
+

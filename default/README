@@ -1,0 +1,43 @@
+Atomic data: 
+   1) The default LINES file contains 143 spectral lines whose wavelengths have been taken from 
+       Nave G., Johansson S., Learner R.C.M, Thorne A.P., Brault J.W., 1994, ApJS 94, 221
+
+       The log gf values have been taken from  
+       Th\'evenin F., 1989, A\&AS 77, 137
+       Th\'evenin F., 1990, A\&AS 82, 179
+
+       A good source of accurate log gf values and central wavelengths
+       for near-infrared spectral lines is
+           Borrero, J.M., Bellot Rubio, L.R., Barklem, P.S., & del Toro Iniesta, J.C. 2003, A&A, in press
+
+    2) LINES1 contains the 7 most used FeI spectral lines
+        6301 & 6302 Hinode/SP
+        15648 & 15652 TIP
+        5250.2 & 5250.6 SUNRISE/IMAX
+        6173 SDO/HMI
+
+    3) LINES2 contains the region from 6148.6 to 6149.2 & 10327
+
+    4) witt.dat is an very old list of atomic parameters compiled by Axel Wittmann. It contains data of 26053 spectral lines
+       from 2000. to 49623 \AA       
+
+Abundances:
+    1) ABUNDANCES contains abundances table from Anders, E. & Grevesse, N. 1989, Geochimica et Cosmochimica Acta Vol 53, pp 197-214
+
+    2) THEVENIN Abundances quoted by THEVENIN and taken from Grevesse, 1984, Physica Scripta, Vol.T8,49-58.
+                Abundances for Na,Mg,Al,Si,K,Ca,Sc,Ti,V,Cr,Mn,Fe,Co,Ni,Cu,Zn,Ge,Sr,Y,Zr,Nb,Mo,Ru,Rh,Ba,La,Ce,Pr,Nd,Sm,Eu,Gd,Dy,W and 
+                Ir from  Holweger as quoted by Thevenin, 1989, Astron. Astrophys. Suppl.Ser 77, 137-154.
+
+    3) ASPLUND contains abundances table from ASPLUND et al. ARAA 47, 481 (2009) 
+    
+Wavelength grid:
+   malla.grid is an example of a wavelength grid file
+   
+Control files:
+   sir.trol is an example of the control file for sir.x
+   model.mtrol is an example of the control file for modelador3.x
+
+PSF:
+   Hinode_SP_ins_prof.psf  contains the spectral PSF of Hinode/SP
+   asp.psf   contains the spectral PSF of ASP spectropolarimeter
+

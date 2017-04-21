@@ -1,0 +1,17 @@
+To compile & link:
+
+   With ifort compiler:
+     make sir.x
+     make modelador3.x
+
+   With gfortran compiler:
+     make fc=gfortran sir.x
+     make fc=gfortran modelador3.x
+     
+Running SIR
+  Move to the directory in which you have the .trol, .per .mod files etc and there
+  echo sir[].trol | [path]/sir.x
+  
+Running modelador3.x 
+  Move to the directory in which you have the .trol, .per .mod files etc and there
+  echo model[].trol | [path]/modelador3.x

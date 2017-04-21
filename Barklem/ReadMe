@@ -1,0 +1,58 @@
+J/A+AS/142/467      List of data for broadening by hydrogen      (Barklem+ 2000)
+================================================================================
+A list of data for the broadening of metallic lines by neutral hydrogen
+collisions
+     P. S. Barklem, N. Piskunov, B. J. O'Mara
+    <Astron. Astrophys. Suppl. Ser. 142, 467 (2000)>
+    =2000A&AS..142..467B     (SIMBAD/NED BibCode)
+================================================================================
+Keywords: Atomic Data - Line: profiles - Astronomical Databases: miscellaneous 
+
+Description:
+    File table1 is a list of theoretical data for the broadening of metallic
+    lines by collisions with neutral hydrogen atoms.  The list contains data
+    for 4891 spectral lines between 2300 and 13000 Angstroms of elements from
+    Li to Ni.
+
+File Summary:
+--------------------------------------------------------------------------------
+  FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe          80        .   This file
+table1         116     4891   List of broadening data and other data used in 
+                              computation 
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table1
+--------------------------------------------------------------------------------
+   Bytes Format Units        Label    Explanations
+--------------------------------------------------------------------------------
+   1-  5  F5.2  ---          spec     Packed element and ionisation stage (1)
+   7- 16  F10.3	0.1nm        lambda   Air wavelength (Angstroms) 
+  18- 21  F4.1  ---          low_J    Lower level J quantum number  
+  23- 26  F4.1  ---          upp_J    Upper level J quantum number 
+  28- 34  F7.3  eV           low_eV   Lower level energy in eV (2)
+  36- 42  F7.3  eV           upp_eV   Upper level energy in eV (2) 
+  44- 53  F10.3 1/cm         low_cm   Lower level energy in waves/cm (2)  
+  55- 64  F10.3 1/cm         lowlim   Lower level series limit in waves/cm (2) 
+  66- 75  F10.3 1/cm         upp_cm   Upper level energy in waves/cm (2) 
+  77- 86  F10.3 1/cm         upplim   Upper level series limit in waves/cm (2) 
+      88  I1    ---          low_l    Lower level l quantum number
+      90  I1    ---          upp_l    Upper level l quantum number
+  92- 97  F6.0  2.80x10-21m2 sigma    Broadening cross-section in atomic units 
+  99-103  F5.3  ---          alpha    Velocity parameter alpha
+ 105-110  F6.3  rad.cm3/s    log.Gam  Log of the FWHM per perturber at 10000K
+ 112-116  F5.3  ---          Texp     Temperature dependence exponent
+--------------------------------------------------------------------------------
+Note (1): The element and ionisation stage are packed into one parameter
+          given by Z + (Z-N)*0.01 where Z is the atomic number of the
+          element, and N is the total number of electrons.  
+
+Note (2): A value of -1.0 indicates that the data was computed directly
+          and not interpolated from the grids.  This occurs for all lines
+          of singly ionised species and a few important neutral species 
+          lines where the states lie just off the grid. 
+--------------------------------------------------------------------------------
+
+================================================================================
+(End)           name [institution]                                   07-Jan-2000

@@ -1,0 +1,44 @@
+Elena Khomenko escribió:
+> Hola Basilio,
+>
+> No tendras por si acaso a mano los dos parametros de ensanchamiento 
+> que utiliza Sir en el fichero de LINEAS para esta linea?
+>
+> 5250.2089    1.2    0.121     -4.96    5D 0.0- 7D 1.0
+>
+> Un monton de gracias!
+> Lena
+> --------------------------------------------------------------------------------------------- 
+>
+> ADVERTENCIA: Sobre la privacidad y cumplimiento de la Ley de 
+> Protección de Datos, acceda a http://www.iac.es/disclaimer.php
+> WARNING: For more information on privacy and fulfilment of the Law 
+> concerning the Protection of Data, consult 
+> http://www.iac.es/disclaimer.php?lang=en
+>
+Hola Lena,
+
+5250.2089    1.2    0.121     -4.96    5D 0.0- 7D 1.0  0.253    5.79600e-15
+
+Te digo de donde sale:
+
+  Te mando la tabla original de Barklem (bajada del ftp que aparece en 
+el articulo original)*
+*Barklem, Piskunov, O'Mara**/* *Astron. Astrophys. Suppl. Ser./ *142*, 
+467-473
+
+en concreto la linea 5250 es
+   sigma=207.
+   alpha=0.253
+
+En la tabla sigma esta en unidades del radio de Bohr al cuadrado (2.80x10-21m2)y 
+tienes que ponerla en cm2. (deben salir exponentes del orden de 10-14 o 
+10-15). Otra cosa: la ultima columna del fichero LINEAS es sigma. La 
+penultima es alfa.
+
+Asi para este caso en concreto tendrias 
+5250.2089    1.2    0.121     -4.96    5D 0.0- 7D 1.0  0.253    5.79600e-15
+
+Un abrazo
+Basilio 
+

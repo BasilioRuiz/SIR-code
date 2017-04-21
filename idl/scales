@@ -1,0 +1,27 @@
+*******************************************************************************
+Manual Y-scales for displaying model atmospheres and Stokes profiles through 
+TAUMENU.PRO. X-scales are the IDL standards.
+
+Each physical quantity/Stokes parameter has three numbers separated by 
+commas: iscale(automatic=0; manual=1), minimum and maximum of the manual scale.
+
+One blank and only one must appear betweem ':' and iscale.
+*******************************************************************************
+
+log (tau)/z (km): 0,-2.7,1.3
+Temperature (10^3 K): 0,3.,10.
+Electronic pressure (dyn cm^-2): 0,1.e-2,3.e3
+Microturbulence (km s^-1): 0,0,1
+Magnetic field strength (10^3 G): 0,0,1
+Line of sight velocity (km s^-1): 0,-5,5
+Magnetic inclination (degrees): 0,0,1
+Magnetic azimuth (degrees): 0,0,1
+Geometrical height (Km) : 0,-200,600.
+Gas pressure (dyn cm^-2): 0,1.e2,1.e6
+Density (gr cm^-3): 0,1.e-9,1.e-6
+I: 0,0.2,1.1
+Q: 0,-.2,.2
+U: 0,-.3,.3
+V: 0,-0.005,.005
+
+*******************************************************************************

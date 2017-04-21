@@ -1,0 +1,17 @@
+Test of SIR intallation
+
+To run a test please create a new directory and copy the files
+in SIR_input_files there.
+
+Then run 
+echo sir.trol | [path]/sir.x
+
+It should generate the files that you can find in
+SIR_output_files (except model2.per that it is there only for checking)
+
+In this run the program try to find the model that best reproduce
+the profiles in model1.per (which were sintetised from model1.mod).
+So the final model (model2_4.mod in our case) should be similar to
+model1.mod, and the final profile (model2_4.per in our case) similar
+to model1.per
+

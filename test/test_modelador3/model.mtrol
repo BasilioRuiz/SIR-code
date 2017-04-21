@@ -1,0 +1,23 @@
+Input Model?                     (*):model1.mod   !
+Ouput Model?                     (*):model2.mod  !
+New grid (tau1,taun,|step|)         :               !none=DEFAULT no modify)
+Degree of pol. used to interpolate  :               !default 2
+change from, to (initial, final index):             !default 1,ntotal points of new grid
+temperature  (a+b*t+c*logtau) a,b,c?:2000.,.6,200               !2000.,1,0               !give a,b,c (default 0,1,0)
+electr. press(a+b*pe+c*logtau) a,b,c?:              !give a,b,c (default 0,1,0)
+microturb.   (a+b*mic+c*logtau) a,b,c?:             !give a,b,c (default 0,1,0)
+magn. field  (a+b*h+c*logtau) a,b,c?:500,.7,100     !give a,b,c (default 0,1,0)
+LOS velocity (a+b*V+c*logtau) a,b,c?:1.e5,0,0       !give a,b,c (default 0,1,0)
+gamma        (a+b*gam+c*logtau) a,b,c?:30,0,0       !give a,b,c (default 0,1,0)
+phi          (a+b*phi+c*logtau) a,b,c?:100,0,0      !give a,b,c (default 0,1,0)
+height   z   (a+b*z+c*logtau) a,b,c?:               !give a,b,c (default 0,1,0)
+gas pressure (a+b*pg+c*logtau) a,b,c?:              !give a,b,c (default 0,1,0)
+density      (a+b*rho+c*logtau) a,b,c?:             !give a,b,c (default 0,1,0)
+Hydrostatic Equilibrium (yes=1)     :1              !DEFAULT=0 no modify
+Magnetic Pressure term? (yes=1)     :               !DEFAULT=0 no included
+tau,Pe-->z,Pg(1) or z,Pg-->tau,Pe(2):              !DEFAULT=1 tau,Pe-->z,Pg(only in case non HE)
+Abundance file?                     :THEVENIN
+Cosine of theta (mu)                :               !DEFAULT=1. 
+gas pressure value at surface       :500.               !DEFAULT=value of the input model
+
+

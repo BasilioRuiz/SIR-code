@@ -1,0 +1,13 @@
+Test of modelador3 intallation
+
+To run a test please create a new directory and copy the files
+in test_modelador3 there.
+
+Then run 
+echo model.mtrol | [path]/modelador3.x
+
+It should generate the file model2.mod after modifying
+model1.mod following the modifications specified in model.mtrol
+
+Additionally it writes the file model2.th containing 
+the thermodinamic quantities evaluated after the new model model2.mod

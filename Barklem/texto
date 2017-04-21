@@ -1,0 +1,26 @@
+Siguiendo con la linea 6173
+en el NIST dice:
+
+3d7(4P)4s --> 3d7(4F)4p
+
+si quitamos el ultimo electron nos queda
+
+Nivel inferior:
+  3d7(4P)
+  que es el tercer nivel excitado de Fe II con energia 13474.4474 cm-1
+  
+Nivel superior:
+  3d7(4F)
+  primer excitado de FeII con enenergia 1872.5998 cm-1
+  
+La energia de ionizacion del Fe I es 7.9024678 ev= 6373.7671 cm-1
+asi queda
+
+Elimite nivel inferior= 6373.7671+13474.4474= 77212.211 cm-1
+
+Elimite nivel superior= 6373.7671+1872.5998 = 65610.367 cm-1
+
+Barklem en sus tablas da 77174 y 65572 es decir -38.21 cm-1 y -38.367 cm-1
+asi que parece que el esta tomando un potencial de iponizacion del FeI
+mas bajo (de 63699.465 cm-1 o sea 7.8977 ev) pero yo creo que se lo podemos
+perdonar...
