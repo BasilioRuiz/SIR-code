@@ -8,13 +8,23 @@ Visualizing models & profiles
 Reading & Writing SIR format
   1) read_model.pro and  write_model.pro read and write model files [model].mod
 
-  2) read_profile.pro and write\_profile.pro read and write profile files [profile].per
+  2) read_profile.pro and write_profile.pro read and write profile files [profile].per
 
   3) read_RF.pro reads Response Function files [model].rft, [model.rfb], [model].rfg, etc., 
      for the 4 Stokes parameters evaluated in models containing a non null magnetic field
   
-  4) read\_RF\_nomag.pro reads Response Function files [model].rft, [model.rfb], [model].rfg, etc., 
+  4) read_RF_nomag.pro reads Response Function files [model].rft, [model.rfb], [model].rfg, etc., 
      for the Stokes I evaluated in models without magnetic field.
+
+Other tools
+  1) Pg_PeT.pro  procedure that calling the program [SIR folder]/PgmufromPeT_i.x evaluates Pg (and many thermodinamical parameters) from T & Pe
+  2) Pe_PgT.pro  procedure that calling the program [SIR folder]/PemufromPgT_i.x evaluates Pe (and many thermodinamical parameters) from T & Pg
+  3) Pgderivatives.pro  procedure that calling the program [SIR folder]/Pgderivatives_i.x evaluates Pg and the derivatives dlogPg/dT and dlogPg/dPe
+  4) add_noise.pro adds noise to a profile
+  5) introduce_points.pro reads a profile and write again but in a new wavelength grid, in such a way
+     that in new points a value -1 it is written 
+  6) sensitivity.pro reading  Stokes_obs and Stokes_syn, model and RF written for a given parameters
+     evaluates the uncertainties of that parameter
 
 Atlas
   1) ftsidl.pro routine allows the extraction of individual spectral lines from
