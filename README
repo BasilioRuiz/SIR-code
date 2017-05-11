@@ -1,0 +1,39 @@
+Visualizing models & profiles 
+   1) graphics2 is an IDL procedure to allow visualize the Stokes profiles and
+          model atmospheres resulting from SIR. It is invoked within IDL 
+          by typing graphics2. 
+          It uses a file called scales which sets the axes of the different 
+          plots. The scaling is automatic, but can be optimized manually. 
+
+Reading & Writing SIR format
+  1) read_model.pro and  write_model.pro read and write model files [model].mod
+
+  2) read_profile.pro and write_profile.pro read and write profile files [profile].per
+
+  3) read_RF.pro reads Response Function files [model].rft, [model.rfb], [model].rfg, etc., 
+     for the 4 Stokes parameters evaluated in models containing a non null magnetic field
+  
+  4) read_RF_nomag.pro reads Response Function files [model].rft, [model.rfb], [model].rfg, etc., 
+     for the Stokes I evaluated in models without magnetic field.
+
+Other tools
+  1) Pg_PeT.pro  procedure that calling the program [SIR folder]/PgmufromPeT_i.x evaluates Pg (and many thermodinamical parameters) from T & Pe
+  2) Pe_PgT.pro  procedure that calling the program [SIR folder]/PemufromPgT_i.x evaluates Pe (and many thermodinamical parameters) from T & Pg
+  3) Pgderivatives.pro  procedure that calling the program [SIR folder]/Pgderivatives_i.x evaluates Pg and the derivatives dlogPg/dT and dlogPg/dPe
+  4) add_noise.pro adds noise to a profile
+  5) introduce_points.pro reads a profile and write again but in a new wavelength grid, in such a way
+     that in new points a value -1 it is written 
+  6) sensitivity.pro reading  Stokes_obs and Stokes_syn, model and RF written for a given parameters
+     evaluates the uncertainties of that parameter
+
+Atlas
+  1) ftsidl.pro routine allows the extraction of individual spectral lines from
+     the FTS atlas provided by the KIS IDL library. This atlas gives the intensity 
+     spectrum of the quiet sun at disk center as measured with the Fourier 
+     Transform Spectrometer at the McMacth-Pierce telescope on Kitt Peak. 
+     FTSIDL produces files containing the profiles and the corresponding 
+     wavelength grids ready to be used by SIR.
+     
+Ambiguity
+  1) desam_brc.pro solve the 180 degrees ambiguity
+
