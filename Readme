@@ -1,4 +1,7 @@
-You can find the following folders:
+You can find 
+SIR2017.tar.gz 
+
+and the following folders:
 
 1) manual. This folder contains a manual describing SIR, how to install and run the code.
 
@@ -6,19 +9,16 @@ You can find the following folders:
 real inversions. A number of utilities for modifying these models or others are provided
 as well.
 
-3) default. This folder keeps default files (as abundance, atomic parameters, grids and sir.trol files)
+3) default. This folder keeps default files (as abundance, atomic parameters, grids and sir.trol files) 
 
-4) program. This folder keeps the source programs and the macros needed to
-compile SIR. 
-
-5) test. This subdirectory contains a particular inversion intended to test the degree of
+4) test. This subdirectory contains a particular inversion intended to test the degree of
 success of the installation.
 
-6) idl. Several IDL procedures for visualizing model atmospheres and Stokes profiles.
+5) idl. Several IDL procedures for visualizing model atmospheres and Stokes profiles.
 There are also some utilities for extracting observed profiles from the IDL FTS spectral
 atlas.
 
-7) Barklem. Several files to evaluate collisional (pressure) broadening parameters
+6 Barklem. Several files to evaluate collisional (pressure) broadening parameters
 \alpha  and \sigma resulting from the quantum mechanical theory of Anstee, Barklem, and O?Mara.
 It includes the file table1 with a large list of spectral lines, the original Barklem program
 widthcom.f and some useful references.
