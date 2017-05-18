@@ -4,6 +4,11 @@ Visualizing models & profiles
           by typing graphics2. 
           It uses a file called scales which sets the axes of the different 
           plots. The scaling is automatic, but can be optimized manually. 
+          
+        graphics.pro  is the same, but should works independently of the screen size 
+          
+   IMPORTANT: you should cp or mv the scales file to your ~/bin folder    
+          
 
 Reading & Writing SIR format
   1) read_model.pro and  write_model.pro read and write model files [model].mod
