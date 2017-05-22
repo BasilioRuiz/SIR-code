@@ -415,7 +415,8 @@ minper=fltarr(4)+1.e30
 
 a=strarr(15)
 b='b'
-openr,1,'~/bin/scales'  ; RUTA DIRECTORIO SCALE FILE
+sir_idl_dir = File_Dirname(Routine_Filepath(/Either),/Mark_Directory)
+openr,1,sir_idl_dir + 'scales'  ; RUTA DIRECTORIO SCALE FILE
 for i=0,9 do readf,1,b
 readf,1,a
 close,1
@@ -1592,7 +1593,8 @@ endif								      ;(-25)
 
 if mag eq 'Scale' then begin					       ;(25)
       
-   spawn,'emacs ~/bin/scales'
+   sir_idl_dir = File_Dirname(Routine_Filepath(/Either),/Mark_Directory)
+   spawn,'emacs ' + sir_idl_dir + 'scales'
 
 endif								      ;(-25) 
 
