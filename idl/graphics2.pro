@@ -415,7 +415,8 @@ minper=fltarr(4)+1.e30
 
 a=strarr(15)
 b='b'
-openr,1,'~/bin/scales'  ; RUTA DIRECTORIO SCALE FILE
+sir_idl_dir = File_Dirname(Routine_Filepath(/Either),/Mark_Directory)
+openr,1,sir_idl_dir + 'scales'  ; RUTA DIRECTORIO SCALE FILE
 for i=0,9 do readf,1,b
 readf,1,a
 close,1
@@ -778,6 +779,21 @@ for i=1,nper do begin
    resulti=fltarr(6,nlam(i-1))
    openr,i,lisper(i-1)
    readf,i,resulti
+   ; --> deal with irregularly sampled (observed) profiles that have -1 values <--
+   ; if there are wavelength positions where I,Q,U,V intensities are equal to -1
+   ; then perform an interpolation of the valid (non-negative-one) points to create a profile
+   ; with valid values at all points.  
+   ; This will help with plotting of these "irregularly sampled" profiles together with the 
+   ; inverted line profiles (which are calculated at all wavelength positions).
+   ; - KPR, 02 June, 2017 - following suggestion by Momchil Molnar to interpolate over bad points,
+   ;                           instead of trying to just drop them out.
+   for sp=2,5 do begin
+       valid_idx = WHERE(resulti[sp,*] GT -1,valid_count)
+       if valid_count LT nlam(i-1) then begin
+           resulti[sp,*] = INTERPOL(resulti[sp,valid_idx],resulti[1,valid_idx],resulti[1,*],Spline=1,Lsquad=0,Quad=0)
+      endif
+   endfor
+
    insulti=resulti(where(is eq 1)+2,*)
    close,i
    resultper(i-1,indgen(ns),0:nlam(i-1)-1)=insulti
@@ -997,7 +1013,18 @@ if nstokes ne 0 then begin
          miny=minper(i)
       endelse
 
-      plot,profileres(0,i,0:nlam(0)-1),color=col2(icolor(0)),charsize=$
+      ; --> deal with irregularly sampled (observed) profiles that have -1 values <--
+      ; here is a second check, to make sure we are only plotting valid (non-negative-one) points
+      ; these points should have been caught and interpolated over rmodprof above.
+      ; This was actually a previous attempt to deal with these invalid points in 
+      ; irregularly sampled profiles. It works, but the problem is that the yrange is determined
+      ; elsewhere (in escalable) where these negative values are still included, so the scaling is wrong.
+      ; - KPR, 28 May, 2017
+      
+      profileres_plot  = REFORM(profileres(0,i,0:nlam(0)-1))
+      profileres_valid = WHERE(profileres_plot GT -1)
+      
+      plot,profileres_valid,profileres_plot[profileres_valid],color=col2(icolor(0)),charsize=$
       tamchar,xtitle=etiquestox,ytitle=etiquestoy(dondesto(i)),$
       ystyle=1,yrange=[miny,maxy]
 
@@ -1592,7 +1619,8 @@ endif								      ;(-25)
 
 if mag eq 'Scale' then begin					       ;(25)
       
-   spawn,'emacs ~/bin/scales'
+   sir_idl_dir = File_Dirname(Routine_Filepath(/Either),/Mark_Directory)
+   spawn,'emacs ' + sir_idl_dir + 'scales'
 
 endif								      ;(-25) 
 
